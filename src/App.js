@@ -16,14 +16,21 @@ function App() {
     .catch(error => console.log(error))
   },[]);
 
+const handleAddCountry = (country) => {
+  console.log("Added",country);
+}
+
+
+
   return (
     <div className="App">
       <h1>Country Loaded : {countries.length}</h1>
+      <h2>Country Addeded:</h2>
       {/* <ul>
           {countries.map(country => <li>{country.name}</li>)}
       </ul> */}
           {/* {countries.map(country => <Country cNames = {country.name}></Country>)} */}
-          {countries.map(country => <Country country = {country} key={country.name}></Country>)}
+          {countries.map(country => <Country country = {country} key={country.name} addCountry = {handleAddCountry}></Country>)}
           {/* key is used to remove an warning in the console */}
           
       <header className="App-header">
