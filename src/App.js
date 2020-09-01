@@ -26,7 +26,7 @@ const handleAddCountry = (country) => {
     <div className="App">
       <h1>Country Loaded : {countries.length}</h1>
       <h2>Country Addeded:</h2>
-      {/* <ul>
+      {/* <ul> 
           {countries.map(country => <li>{country.name}</li>)}
       </ul> */}
           {/* {countries.map(country => <Country cNames = {country.name}></Country>)} */}
